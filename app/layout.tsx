@@ -1,64 +1,61 @@
-import type { Metadata, Viewport } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
-import "./globals.css";
+import type { Metadata, Viewport } from 'next';
+import { Inter, Playfair_Display } from 'next/font/google';
+import './globals.css';
 
-const playfair = Playfair_Display({ 
+const playfair = Playfair_Display({
   subsets: ['latin'],
   display: 'swap',
   weight: ['400', '500'],
   style: ['normal'],
-})
+});
 
-const inter = Inter({ 
+const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
-})
+});
 
 export const metadata: Metadata = {
-  title: "MailSense - AI-Powered Email Management",
-  description: "Save up to 2 hours daily with AI-powered email management. Automate tasks, prioritize important emails, and respond faster.",
+  title: 'MailSense - AI-Powered Email Management',
+  description:
+    'Save up to 2 hours daily with AI-powered email management. Automate tasks, prioritize important emails, and respond faster.',
   icons: {
     icon: [
       {
-        url: "/images/idevibelogo.png",
-        type: "image/png",
-        sizes: "32x32"
+        url: '/images/idevibelogo.png',
+        type: 'image/png',
+        sizes: '32x32',
       },
       {
-        url: "/images/idevibelogo.png",
-        type: "image/png",
-        sizes: "16x16"
-      }
+        url: '/images/idevibelogo.png',
+        type: 'image/png',
+        sizes: '16x16',
+      },
     ],
     apple: [
       {
-        url: "/images/idevibelogo.png",
-        type: "image/png",
-        sizes: "180x180"
-      }
+        url: '/images/idevibelogo.png',
+        type: 'image/png',
+        sizes: '180x180',
+      },
     ],
-    shortcut: [{ url: "/images/idevibelogo.png" }],
+    shortcut: [{ url: '/images/idevibelogo.png' }],
     other: [
       {
-        rel: "icon",
-        url: "/images/idevibelogo.png",
+        rel: 'icon',
+        url: '/images/idevibelogo.png',
       },
     ],
   },
-  manifest: "/manifest.json",
-}
+  manifest: '/manifest.json',
+};
 
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
   maximumScale: 1,
-}
+};
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="dark">
       <head>

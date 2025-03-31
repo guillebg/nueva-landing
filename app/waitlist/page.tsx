@@ -1,31 +1,31 @@
-'use client'
+'use client';
 
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
-import { Playfair_Display, Inter } from 'next/font/google'
-import { useState } from 'react'
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
+import { Playfair_Display, Inter } from 'next/font/google';
+import { useState } from 'react';
 
-const playfair = Playfair_Display({ 
+const playfair = Playfair_Display({
   subsets: ['latin'],
   display: 'swap',
   weight: ['400', '500'],
   style: ['normal'],
-})
+});
 
 const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
-})
+});
 
 export default function WaitlistPage() {
-  const [email, setEmail] = useState('')
-  const [privacyAccepted, setPrivacyAccepted] = useState(false)
+  const [email, setEmail] = useState('');
+  const [privacyAccepted, setPrivacyAccepted] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
+    e.preventDefault();
     // Here you would typically handle the form submission
-    console.log('Form submitted:', { email, privacyAccepted })
-  }
+    console.log('Form submitted:', { email, privacyAccepted });
+  };
 
   return (
     <div className={`min-h-screen bg-black text-foreground ${inter.className}`}>
@@ -45,7 +45,8 @@ export default function WaitlistPage() {
           </p>
           <div className="bg-blue-500/10 border border-blue-500/20 rounded-lg p-6 mb-8">
             <p className="text-lg text-blue-400">
-              ✨ Early Bird Bonus: The first 50 waitlist members will get a FREE premium account for 3 months!
+              ✨ Early Bird Bonus: The first 50 waitlist members will get a FREE premium account for
+              3 months!
             </p>
           </div>
         </div>
@@ -76,12 +77,15 @@ export default function WaitlistPage() {
               required
             />
             <label htmlFor="privacy" className="text-sm text-gray-400">
-              I accept the <Link href="/privacidad" className="text-blue-400 hover:text-blue-300">privacy policy</Link>
+              I accept the{' '}
+              <Link href="/privacidad" className="text-blue-400 hover:text-blue-300">
+                privacy policy
+              </Link>
             </label>
           </div>
 
-          <Button 
-            type="submit" 
+          <Button
+            type="submit"
             className="w-full text-lg py-6"
             disabled={!privacyAccepted || !email}
           >
@@ -107,5 +111,5 @@ export default function WaitlistPage() {
         </div>
       </footer>
     </div>
-  )
-} 
+  );
+}

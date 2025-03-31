@@ -1,36 +1,39 @@
-'use client'
+'use client';
 
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
-import { useEffect, useRef } from "react"
-import { Playfair_Display, Inter } from 'next/font/google'
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
+import { useEffect, useRef } from 'react';
+import { Playfair_Display, Inter } from 'next/font/google';
 
-const playfair = Playfair_Display({ 
+const playfair = Playfair_Display({
   subsets: ['latin'],
   display: 'swap',
   weight: ['400', '500'],
   style: ['normal'],
-})
+});
 
 const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
-})
+});
 
 export default function Page() {
   const observerRef = useRef<IntersectionObserver | null>(null);
 
   useEffect(() => {
-    observerRef.current = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate-in');
-        }
-      });
-    }, {
-      threshold: 0.1,
-      rootMargin: '50px'
-    });
+    observerRef.current = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-in');
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+        rootMargin: '50px',
+      }
+    );
 
     document.querySelectorAll('.scroll-animation').forEach((element) => {
       observerRef.current?.observe(element);
@@ -41,10 +44,12 @@ export default function Page() {
 
   useEffect(() => {
     const loadTally = () => {
-      const existingScript = document.querySelector('script[src="https://tally.so/widgets/embed.js"]');
+      const existingScript = document.querySelector(
+        'script[src="https://tally.so/widgets/embed.js"]'
+      );
       if (!existingScript) {
         const script = document.createElement('script');
-        script.src = "https://tally.so/widgets/embed.js";
+        script.src = 'https://tally.so/widgets/embed.js';
         script.async = true;
         script.onload = () => {
           // @ts-ignore
@@ -64,13 +69,23 @@ export default function Page() {
     <div className={`flex flex-col min-h-screen bg-black text-foreground ${inter.className}`}>
       <style jsx global>{`
         @keyframes fadeIn {
-          from { opacity: 0; transform: translateY(20px); }
-          to { opacity: 1; transform: translateY(0); }
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
         }
 
         @keyframes shimmer {
-          0% { background-position: 0% 0; }
-          100% { background-position: 200% 0; }
+          0% {
+            background-position: 0% 0;
+          }
+          100% {
+            background-position: 200% 0;
+          }
         }
 
         .fade-in {
@@ -78,17 +93,23 @@ export default function Page() {
           opacity: 0;
         }
 
-        .delay-1 { animation-delay: 0.2s; }
-        .delay-2 { animation-delay: 0.4s; }
-        .delay-3 { animation-delay: 0.6s; }
-        
+        .delay-1 {
+          animation-delay: 0.2s;
+        }
+        .delay-2 {
+          animation-delay: 0.4s;
+        }
+        .delay-3 {
+          animation-delay: 0.6s;
+        }
+
         .glimmer-card {
           position: relative;
           background: rgb(23, 23, 23);
           border-radius: 12px;
           overflow: hidden;
         }
-        
+
         .glimmer-card::before {
           content: '';
           position: absolute;
@@ -112,7 +133,7 @@ export default function Page() {
           border-radius: 9999px;
           overflow: hidden;
         }
-        
+
         .glimmer-pill::before {
           content: '';
           position: absolute;
@@ -159,9 +180,15 @@ export default function Page() {
           transform: translateY(0);
         }
 
-        .scroll-delay-1 { transition-delay: 0.1s; }
-        .scroll-delay-2 { transition-delay: 0.2s; }
-        .scroll-delay-3 { transition-delay: 0.3s; }
+        .scroll-delay-1 {
+          transition-delay: 0.1s;
+        }
+        .scroll-delay-2 {
+          transition-delay: 0.2s;
+        }
+        .scroll-delay-3 {
+          transition-delay: 0.3s;
+        }
 
         .gradient-text {
           background: linear-gradient(45deg, #3490dc, #6574cd);
@@ -183,9 +210,7 @@ export default function Page() {
             FAQ
           </Link>
           <Link href="/waitlist">
-            <Button variant="outline">
-              Join Waitlist
-            </Button>
+            <Button variant="outline">Join Waitlist</Button>
           </Link>
         </nav>
       </header>
@@ -196,11 +221,11 @@ export default function Page() {
           <div className="hero-glow" />
           <div className="max-w-[1200px] mx-auto text-center relative z-10">
             <h1 className={`text-5xl md:text-7xl font-bold mb-6 ${playfair.className}`}>
-              Transform Your Inbox into a
-              <span className="gradient-text"> Productivity Engine</span>
+              Transform Your Inbox into a<span className="gradient-text"> Productivity Engine</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-400 mb-12 max-w-3xl mx-auto">
-              We analyze your emails 24/7 to prioritize what matters, automate repetitive tasks, and help you respond faster with AI.
+              We analyze your emails 24/7 to prioritize what matters, automate repetitive tasks, and
+              help you respond faster with AI.
             </p>
             <Link href="/waitlist">
               <Button size="lg" className="text-lg px-8 py-6">
@@ -216,7 +241,7 @@ export default function Page() {
             <h2 className={`text-3xl md:text-4xl text-center mb-16 ${playfair.className}`}>
               Tired of Getting Lost in Your Email?
             </h2>
-            
+
             <div className="grid md:grid-cols-2 gap-12">
               {/* Old Way */}
               <div className="space-y-6">
@@ -273,27 +298,27 @@ export default function Page() {
             <h2 className={`text-3xl md:text-4xl text-center mb-16 ${playfair.className}`}>
               Frequently Asked Questions
             </h2>
-            
+
             <div className="space-y-8">
               <div className="scroll-animation">
                 <h3 className="text-xl font-semibold mb-3">How does MailSense work?</h3>
                 <p className="text-gray-400">
-                  MailSense uses advanced AI to analyze your email patterns, prioritize important messages, and suggest personalized responses based on your communication style.
+                  MailSense uses advanced AI to analyze your email patterns, prioritize important
+                  messages, and suggest personalized responses based on your communication style.
                 </p>
               </div>
 
               <div className="scroll-animation">
                 <h3 className="text-xl font-semibold mb-3">Is MailSense safe to use?</h3>
                 <p className="text-gray-400">
-                  Security is our top priority. We use military-grade encryption and never store sensitive content from your emails.
+                  Security is our top priority. We use military-grade encryption and never store
+                  sensitive content from your emails.
                 </p>
               </div>
 
               <div className="scroll-animation">
                 <h3 className="text-xl font-semibold mb-3">Which email clients are supported?</h3>
-                <p className="text-gray-400">
-                  MailSense is compatible with Gmail
-                </p>
+                <p className="text-gray-400">MailSense is compatible with Gmail</p>
               </div>
             </div>
           </div>
@@ -331,5 +356,5 @@ export default function Page() {
         </div>
       </footer>
     </div>
-  )
+  );
 }

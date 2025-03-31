@@ -1,20 +1,20 @@
-'use client'
+'use client';
 
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
-import { Playfair_Display, Inter } from 'next/font/google'
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
+import { Playfair_Display, Inter } from 'next/font/google';
 
-const playfair = Playfair_Display({ 
+const playfair = Playfair_Display({
   subsets: ['latin'],
   display: 'swap',
   weight: ['400', '500'],
   style: ['normal'],
-})
+});
 
 const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
-})
+});
 
 export default function PrivacyPage() {
   return (
@@ -28,9 +28,7 @@ export default function PrivacyPage() {
             Home
           </Link>
           <Link href="/waitlist">
-            <Button variant="outline">
-              Join Waitlist
-            </Button>
+            <Button variant="outline">Join Waitlist</Button>
           </Link>
         </nav>
       </header>
@@ -41,29 +39,44 @@ export default function PrivacyPage() {
 
         <div className="space-y-8 text-gray-300">
           <p>
-            MailSense ("we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and share your information when you use our Service.
+            MailSense ("we," "us," or "our") is committed to protecting your privacy. This Privacy
+            Policy explains how we collect, use, and share your information when you use our
+            Service.
           </p>
 
           <section>
-            <h2 className={`text-2xl font-semibold mb-4 ${playfair.className}`}>Information We Collect</h2>
+            <h2 className={`text-2xl font-semibold mb-4 ${playfair.className}`}>
+              Information We Collect
+            </h2>
             <div className="space-y-4">
               <div>
                 <h3 className="text-xl font-medium mb-2">1.1. Personal Information</h3>
-                <p>When you join our waitlist, we collect your email address with your explicit consent.</p>
+                <p>
+                  When you join our waitlist, we collect your email address with your explicit
+                  consent.
+                </p>
               </div>
               <div>
                 <h3 className="text-xl font-medium mb-2">1.2. Usage Data</h3>
-                <p>We may collect information about how you interact with our Service, including IP address, browser type, and usage patterns.</p>
+                <p>
+                  We may collect information about how you interact with our Service, including IP
+                  address, browser type, and usage patterns.
+                </p>
               </div>
               <div>
                 <h3 className="text-xl font-medium mb-2">1.3. Cookies and Tracking Technologies</h3>
-                <p>We use cookies to enhance our Service and analyze traffic. You can manage your cookie preferences through your browser settings.</p>
+                <p>
+                  We use cookies to enhance our Service and analyze traffic. You can manage your
+                  cookie preferences through your browser settings.
+                </p>
               </div>
             </div>
           </section>
 
           <section>
-            <h2 className={`text-2xl font-semibold mb-4 ${playfair.className}`}>Legal Basis for Data Processing</h2>
+            <h2 className={`text-2xl font-semibold mb-4 ${playfair.className}`}>
+              Legal Basis for Data Processing
+            </h2>
             <p>We process your personal data based on the following legal grounds:</p>
             <ul className="list-disc pl-6 space-y-2">
               <li>Consent: When you voluntarily provide your email to join our waitlist.</li>
@@ -73,11 +86,16 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className={`text-2xl font-semibold mb-4 ${playfair.className}`}>How We Use Your Information</h2>
+            <h2 className={`text-2xl font-semibold mb-4 ${playfair.className}`}>
+              How We Use Your Information
+            </h2>
             <div className="space-y-4">
               <div>
                 <h3 className="text-xl font-medium mb-2">3.1. Service Operation</h3>
-                <p>We use your email to notify you about updates, product launches, and related communications.</p>
+                <p>
+                  We use your email to notify you about updates, product launches, and related
+                  communications.
+                </p>
               </div>
               <div>
                 <h3 className="text-xl font-medium mb-2">3.2. Improvements</h3>
@@ -91,32 +109,50 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className={`text-2xl font-semibold mb-4 ${playfair.className}`}>Information Sharing</h2>
+            <h2 className={`text-2xl font-semibold mb-4 ${playfair.className}`}>
+              Information Sharing
+            </h2>
             <div className="space-y-4">
               <div>
                 <h3 className="text-xl font-medium mb-2">4.1. Third-Party Service Providers</h3>
-                <p>We may share data with service providers assisting with email delivery, analytics, and infrastructure. All third parties must comply with GDPR and have signed Data Processing Agreements (DPA) with us.</p>
+                <p>
+                  We may share data with service providers assisting with email delivery, analytics,
+                  and infrastructure. All third parties must comply with GDPR and have signed Data
+                  Processing Agreements (DPA) with us.
+                </p>
               </div>
               <div>
                 <h3 className="text-xl font-medium mb-2">4.2. Legal Obligations</h3>
-                <p>We may disclose information if required to comply with legal requirements or protect our rights.</p>
+                <p>
+                  We may disclose information if required to comply with legal requirements or
+                  protect our rights.
+                </p>
               </div>
               <div>
                 <h3 className="text-xl font-medium mb-2">4.3. Business Transfers</h3>
-                <p>In the event of a merger, acquisition, or asset sale, user data may be transferred.</p>
+                <p>
+                  In the event of a merger, acquisition, or asset sale, user data may be
+                  transferred.
+                </p>
               </div>
             </div>
           </section>
 
           <section>
-            <h2 className={`text-2xl font-semibold mb-4 ${playfair.className}`}>User Rights Under GDPR</h2>
-            <p>Under the General Data Protection Regulation (GDPR), users have the following rights:</p>
+            <h2 className={`text-2xl font-semibold mb-4 ${playfair.className}`}>
+              User Rights Under GDPR
+            </h2>
+            <p>
+              Under the General Data Protection Regulation (GDPR), users have the following rights:
+            </p>
             <ul className="list-disc pl-6 space-y-2">
               <li>Right of Access – Request a copy of the data we hold about you.</li>
               <li>Right to Rectification – Request correction of inaccurate personal data.</li>
               <li>Right to Erasure – Request deletion of your data ("Right to be Forgotten").</li>
               <li>Right to Restrict Processing – Request to limit how we process your data.</li>
-              <li>Right to Data Portability – Receive a copy of your data in a structured format.</li>
+              <li>
+                Right to Data Portability – Receive a copy of your data in a structured format.
+              </li>
               <li>Right to Object – Object to data processing based on legitimate interests.</li>
               <li>Right to Withdraw Consent – Withdraw previously given consent at any time.</li>
             </ul>
@@ -124,42 +160,78 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className={`text-2xl font-semibold mb-4 ${playfair.className}`}>Data Security and Retention</h2>
+            <h2 className={`text-2xl font-semibold mb-4 ${playfair.className}`}>
+              Data Security and Retention
+            </h2>
             <div className="space-y-4">
               <div>
                 <h3 className="text-xl font-medium mb-2">6.1. Security Measures</h3>
-                <p>We implement technical and organizational security measures to protect your data. However, no internet transmission method is 100% secure.</p>
+                <p>
+                  We implement technical and organizational security measures to protect your data.
+                  However, no internet transmission method is 100% secure.
+                </p>
               </div>
               <div>
                 <h3 className="text-xl font-medium mb-2">6.2. Data Retention</h3>
-                <p>We retain your personal data only as long as necessary to fulfill its purpose unless a longer retention period is required by law. You may request data deletion at any time.</p>
+                <p>
+                  We retain your personal data only as long as necessary to fulfill its purpose
+                  unless a longer retention period is required by law. You may request data deletion
+                  at any time.
+                </p>
               </div>
             </div>
           </section>
 
           <section>
-            <h2 className={`text-2xl font-semibold mb-4 ${playfair.className}`}>International Data Transfers</h2>
-            <p>If we transfer your data outside the European Economic Area (EEA), we implement appropriate safeguards, such as Standard Contractual Clauses (SCC), to protect your personal data.</p>
+            <h2 className={`text-2xl font-semibold mb-4 ${playfair.className}`}>
+              International Data Transfers
+            </h2>
+            <p>
+              If we transfer your data outside the European Economic Area (EEA), we implement
+              appropriate safeguards, such as Standard Contractual Clauses (SCC), to protect your
+              personal data.
+            </p>
           </section>
 
           <section>
-            <h2 className={`text-2xl font-semibold mb-4 ${playfair.className}`}>Cookies and Tracking Technologies</h2>
-            <p>We use cookies and similar technologies to improve your experience. By using our Service, you agree to the use of cookies unless you adjust your settings. You can manage or disable cookies through your browser settings.</p>
+            <h2 className={`text-2xl font-semibold mb-4 ${playfair.className}`}>
+              Cookies and Tracking Technologies
+            </h2>
+            <p>
+              We use cookies and similar technologies to improve your experience. By using our
+              Service, you agree to the use of cookies unless you adjust your settings. You can
+              manage or disable cookies through your browser settings.
+            </p>
           </section>
 
           <section>
-            <h2 className={`text-2xl font-semibold mb-4 ${playfair.className}`}>Children's Privacy</h2>
-            <p>Our Service is not intended for children under 18. We do not knowingly collect personal data from children.</p>
+            <h2 className={`text-2xl font-semibold mb-4 ${playfair.className}`}>
+              Children's Privacy
+            </h2>
+            <p>
+              Our Service is not intended for children under 18. We do not knowingly collect
+              personal data from children.
+            </p>
           </section>
 
           <section>
-            <h2 className={`text-2xl font-semibold mb-4 ${playfair.className}`}>Changes to This Privacy Policy</h2>
-            <p>We may update this Privacy Policy. Continued use of the Service after changes implies acceptance of the new policy.</p>
+            <h2 className={`text-2xl font-semibold mb-4 ${playfair.className}`}>
+              Changes to This Privacy Policy
+            </h2>
+            <p>
+              We may update this Privacy Policy. Continued use of the Service after changes implies
+              acceptance of the new policy.
+            </p>
           </section>
 
           <section>
-            <h2 className={`text-2xl font-semibold mb-4 ${playfair.className}`}>Contact Information and Data Protection Requests</h2>
-            <p>For questions about this Privacy Policy or GDPR-related requests, contact us at: hello@mailsense.com.</p>
+            <h2 className={`text-2xl font-semibold mb-4 ${playfair.className}`}>
+              Contact Information and Data Protection Requests
+            </h2>
+            <p>
+              For questions about this Privacy Policy or GDPR-related requests, contact us at:
+              hello@mailsense.com.
+            </p>
           </section>
         </div>
       </main>
@@ -178,5 +250,5 @@ export default function PrivacyPage() {
         </div>
       </footer>
     </div>
-  )
-} 
+  );
+}

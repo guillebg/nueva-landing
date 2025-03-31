@@ -1,19 +1,19 @@
-'use client'
+'use client';
 
-import { Playfair_Display, Inter } from 'next/font/google'
-import Link from 'next/link'
+import { Playfair_Display, Inter } from 'next/font/google';
+import Link from 'next/link';
 
-const playfair = Playfair_Display({ 
+const playfair = Playfair_Display({
   subsets: ['latin'],
   display: 'swap',
   weight: ['400', '500'],
   style: ['normal'],
-})
+});
 
 const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
-})
+});
 
 export default function TermsPage() {
   return (
@@ -32,22 +32,26 @@ export default function TermsPage() {
 
         <div className="prose prose-invert max-w-none">
           <p className="mb-6">
-            Welcome to MailSense (the "Service"), operated by MailSense (the "Company," "we," "us," or "our"). 
-            By accessing or using our Service, you agree to these Terms of Service (the "Terms"). 
-            If you do not accept them, do not use the Service.
+            Welcome to MailSense (the "Service"), operated by MailSense (the "Company," "we," "us,"
+            or "our"). By accessing or using our Service, you agree to these Terms of Service (the
+            "Terms"). If you do not accept them, do not use the Service.
           </p>
 
-          <h2 className={`text-2xl font-bold mt-8 mb-4 ${playfair.className}`}>Use of the Service</h2>
-          
+          <h2 className={`text-2xl font-bold mt-8 mb-4 ${playfair.className}`}>
+            Use of the Service
+          </h2>
+
           <h3 className="text-xl font-semibold mt-6 mb-2">1.1. Eligibility</h3>
           <p className="mb-4">
-            You must be at least 18 years old and legally capable of entering into contracts to use our Service.
+            You must be at least 18 years old and legally capable of entering into contracts to use
+            our Service.
           </p>
 
           <h3 className="text-xl font-semibold mt-6 mb-2">1.2. License</h3>
           <p className="mb-4">
-            We grant you a limited, non-exclusive, non-transferable, and revocable license to use our Service 
-            for the purpose of automating email management in Gmail through artificial intelligence.
+            We grant you a limited, non-exclusive, non-transferable, and revocable license to use
+            our Service for the purpose of automating email management in Gmail through artificial
+            intelligence.
           </p>
 
           <h3 className="text-xl font-semibold mt-6 mb-2">1.3. Prohibited Activities</h3>
@@ -56,20 +60,25 @@ export default function TermsPage() {
             <li>Use the Service for illegal purposes.</li>
             <li>Attempt to reverse engineer, copy, or modify our software.</li>
             <li>Interfere with or disrupt the Service.</li>
-            <li>Use the Service to send spam, impersonate others, or engage in fraudulent activities.</li>
+            <li>
+              Use the Service to send spam, impersonate others, or engage in fraudulent activities.
+            </li>
           </ul>
 
-          <h2 className={`text-2xl font-bold mt-8 mb-4 ${playfair.className}`}>Waitlist and Data Collection</h2>
-          
+          <h2 className={`text-2xl font-bold mt-8 mb-4 ${playfair.className}`}>
+            Waitlist and Data Collection
+          </h2>
+
           <h3 className="text-xl font-semibold mt-6 mb-2">2.1. Waitlist Registration</h3>
           <p className="mb-4">
-            By joining the waitlist, you provide your email address and agree to receive updates about the Service.
+            By joining the waitlist, you provide your email address and agree to receive updates
+            about the Service.
           </p>
 
           <h3 className="text-xl font-semibold mt-6 mb-2">2.2. Data Usage</h3>
           <p className="mb-4">
-            We collect and store your email address to send you notifications and improve the user experience. 
-            We do not sell or share your email with third parties without your consent.
+            We collect and store your email address to send you notifications and improve the user
+            experience. We do not sell or share your email with third parties without your consent.
           </p>
 
           <h3 className="text-xl font-semibold mt-6 mb-2">2.3. Opt-out</h3>
@@ -77,20 +86,26 @@ export default function TermsPage() {
             You can unsubscribe at any time by clicking the "unsubscribe" link in our emails.
           </p>
 
-          <h2 className={`text-2xl font-bold mt-8 mb-4 ${playfair.className}`}>Intellectual Property</h2>
-          
+          <h2 className={`text-2xl font-bold mt-8 mb-4 ${playfair.className}`}>
+            Intellectual Property
+          </h2>
+
           <h3 className="text-xl font-semibold mt-6 mb-2">3.1. Ownership</h3>
           <p className="mb-4">
-            All rights, titles, and interests in the Service, including trademarks, content, and software, remain ours.
+            All rights, titles, and interests in the Service, including trademarks, content, and
+            software, remain ours.
           </p>
 
           <h3 className="text-xl font-semibold mt-6 mb-2">3.2. Restrictions</h3>
           <p className="mb-4">
-            You may not use our brand, logos, or other proprietary materials without written permission.
+            You may not use our brand, logos, or other proprietary materials without written
+            permission.
           </p>
 
-          <h2 className={`text-2xl font-bold mt-8 mb-4 ${playfair.className}`}>Disclaimers and Liability Limitations</h2>
-          
+          <h2 className={`text-2xl font-bold mt-8 mb-4 ${playfair.className}`}>
+            Disclaimers and Liability Limitations
+          </h2>
+
           <h3 className="text-xl font-semibold mt-6 mb-2">4.1. No Warranty</h3>
           <p className="mb-4">
             The Service is provided "as is" without any warranties, express or implied.
@@ -98,11 +113,12 @@ export default function TermsPage() {
 
           <h3 className="text-xl font-semibold mt-6 mb-2">4.2. Limitation of Liability</h3>
           <p className="mb-4">
-            We will not be liable for any indirect, incidental, or consequential damages arising from your use of the Service.
+            We will not be liable for any indirect, incidental, or consequential damages arising
+            from your use of the Service.
           </p>
 
           <h2 className={`text-2xl font-bold mt-8 mb-4 ${playfair.className}`}>Termination</h2>
-          
+
           <h3 className="text-xl font-semibold mt-6 mb-2">5.1. Breach</h3>
           <p className="mb-4">
             We reserve the right to cancel or suspend your access if you violate these Terms.
@@ -113,19 +129,30 @@ export default function TermsPage() {
             Upon termination, your right to use the Service immediately ceases.
           </p>
 
-          <h2 className={`text-2xl font-bold mt-8 mb-4 ${playfair.className}`}>Changes to These Terms</h2>
+          <h2 className={`text-2xl font-bold mt-8 mb-4 ${playfair.className}`}>
+            Changes to These Terms
+          </h2>
           <p className="mb-4">
-            We may update these Terms at any time. Continued use of the Service after changes constitutes acceptance of the new Terms.
+            We may update these Terms at any time. Continued use of the Service after changes
+            constitutes acceptance of the new Terms.
           </p>
 
-          <h2 className={`text-2xl font-bold mt-8 mb-4 ${playfair.className}`}>Governing Law and Disputes</h2>
+          <h2 className={`text-2xl font-bold mt-8 mb-4 ${playfair.className}`}>
+            Governing Law and Disputes
+          </h2>
           <p className="mb-4">
-            These Terms are governed by the laws of California, United States. Any disputes will be resolved in the courts of California.
+            These Terms are governed by the laws of California, United States. Any disputes will be
+            resolved in the courts of California.
           </p>
 
-          <h2 className={`text-2xl font-bold mt-8 mb-4 ${playfair.className}`}>Contact Information</h2>
+          <h2 className={`text-2xl font-bold mt-8 mb-4 ${playfair.className}`}>
+            Contact Information
+          </h2>
           <p className="mb-4">
-            If you have any questions, contact us at: <a href="mailto:hello@mailsense.com" className="text-blue-400 hover:text-blue-300">hello@mailsense.com</a>
+            If you have any questions, contact us at:{' '}
+            <a href="mailto:hello@mailsense.com" className="text-blue-400 hover:text-blue-300">
+              hello@mailsense.com
+            </a>
           </p>
         </div>
       </main>
@@ -144,5 +171,5 @@ export default function TermsPage() {
         </div>
       </footer>
     </div>
-  )
-} 
+  );
+}
