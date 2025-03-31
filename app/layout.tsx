@@ -15,8 +15,8 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "vibedev.ai",
-  description: "Experience the new way of coding with vibedev.ai. Transform your development workflow and vibe with your code like never before.",
+  title: "MailSense - AI-Powered Email Management",
+  description: "Save up to 2 hours daily with AI-powered email management. Automate tasks, prioritize important emails, and respond faster.",
   icons: {
     icon: [
       {
