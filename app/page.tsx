@@ -209,9 +209,6 @@ export default function Page() {
           <Link href="#faq" className="text-gray-300 hover:text-white">
             FAQ
           </Link>
-          <Link href="/waitlist">
-            <Button variant="outline">Join Waitlist</Button>
-          </Link>
         </nav>
       </header>
 
@@ -224,14 +221,11 @@ export default function Page() {
               Transform Your Inbox into a<span className="gradient-text"> Productivity Engine</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-400 mb-12 max-w-3xl mx-auto">
-              We analyze your emails 24/7 to prioritize what matters, automate repetitive tasks, and
-              help you respond faster with AI.
+              We analyze your emails 24/7 to prioritize what matters, automate repetitive tasks, and help you respond faster with AI.
             </p>
-            <Link href="/waitlist">
-              <Button size="lg" className="text-lg px-8 py-6">
-                Join Waitlist
-              </Button>
-            </Link>
+            <Button size="lg" className="text-lg px-8 py-6">
+              Coming Soon
+            </Button>
           </div>
         </section>
 
@@ -330,14 +324,12 @@ export default function Page() {
             <h2 className={`text-3xl md:text-4xl mb-8 ${playfair.className}`}>
               Let AI Handle Your Email
             </h2>
-            <p className="text-xl text-gray-400 mb-12">
+            <p className="text-xl text-gray-400 mb-8">
               Save up to 2 hours daily and keep your inbox under control
             </p>
-            <Link href="/waitlist">
-              <Button size="lg" className="text-lg px-8 py-6">
-                Join Waitlist ►
-              </Button>
-            </Link>
+            <Button size="lg" className="text-lg px-8 py-6">
+              Coming Soon
+            </Button>
           </div>
         </section>
       </main>
